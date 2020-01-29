@@ -120,8 +120,6 @@ h1, h2, h3, h4, h5 {
 .logo-div img {
 	width: 100%;
 	height: auto;
-	padding-top: 27px;
-	padding-left: 23px;
 }
 
 /* Header */
@@ -296,6 +294,7 @@ footer {
 @media (max-width: 800px) {
     .container {
         width: 95%;
+        min-width: 0;
     }
     .nav-bar {
         flex-wrap: wrap-reverse;
@@ -320,9 +319,31 @@ footer {
     }
     .nav-bar nav {
         flex-direction: column;
+        justify-content: space-around;
+        height: 300px;
+        border-top: 2px solid #999999;
+    }
+    .nav-bar nav li {
+        width: 100%;
+        text-align: center;
+        padding-top: 0;
+        padding-bottom: 4%;
+        border-bottom: 2px solid #999999;
+    }
+    .logo-div {
+        width: 50%;
+        margin: 3% 0;
+    }
+    .cta-main h1 {
+        font-size: 17vw;
     }
     .info-top, .info-bottom {
         flex-wrap: wrap;
+        margin-bottom: 0;
+    }
+    .info-top section, .info-bottom section {
+        width: 100%;
+        margin-bottom: 8%;
     }
 }
 
