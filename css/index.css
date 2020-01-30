@@ -1,3 +1,349 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+/* Container and Universals */
+
+.flex {
+	display: flex;
+}
+
+.container {
+	width: 46%;
+	min-width: 600px;
+	margin: 0 auto;
+}
+
+/* Navigation */
+
+.nav-bar {
+	justify-content: space-between;
+	margin-bottom: 8%;
+}
+
+.nav-bar.services-page {
+	margin-bottom: 3%;
+}
+
+.nav-bar nav {
+	width: 68.25%;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.nav-bar nav li {
+	display: inline-block;
+	font-size: .9rem;
+	padding-top: 25px;
+	color: #999999;
+	transition: .3s;
+}
+
+.nav-bar nav a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.nav-bar nav li:hover {
+	transform: scale(1.2);
+	color: black;
+}
+
+.logo-div {
+	display: inline-block;
+	width: 23.5%;
+}
+
+.logo-div img {
+	width: 100%;
+	height: auto;
+}
+
+/* Header */
+
+.call-to-action {
+	border-bottom: 1px solid black;
+	padding-bottom: 8%;
+	margin-bottom: 5%;
+}
+
+.cta-main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+}
+
+.cta-main h1 {
+	font-size: 80px;
+	text-align: center;
+	width: 300px;
+}
+
+.cta-main a {
+	text-decoration: none;
+	color: black;
+	font-size: 16px;
+	border: 1px solid black;
+	padding: 5px 50px;
+}
+
+.cta-img {
+	display: flex;
+	justify-content: flex-end;
+	width: 50%;
+}
+
+/* Header - Services Page */
+
+.services-header-img {
+	width: 100%;
+	height: auto;
+}
+
+.title-card {
+	display: flex;
+	flex-direction: column;
+	padding-top: 5%;
+	padding-bottom: 2%;
+	border-bottom: 1px solid black;
+	margin-bottom: 5%;
+}
+
+.title-card h1 {
+	font-size: 27px;
+}
+
+.title-card p {
+	line-height: 1.3;
+}
+
+/* Content - Main Page*/
+
+.info {
+	flex-direction: column;
+	border-bottom: 1px solid black;
+	margin-bottom: 5%;
+	font-size: 17px;
+}
+
+.info-top, .info-middle, .info-bottom {
+	margin-bottom: 5%;
+}
+
+.info-top section {
+	width: 50%;
+}
+
+.features {
+	margin-right: 8%;
+}
+
+.middle-img {
+	width: 100%;
+	height: auto;
+}
+
+.info-bottom section {
+	font-size: 17px;
+	width: 30%;
+}
+
+.services, .products {
+	margin-right: 8%;
+}
+
+.contact {
+	margin-bottom: 8%;
+}
+
+.contact li {
+	margin-bottom: 3%;
+	width: 25%;
+}
+
+footer {
+	text-align: center;
+	font-size: 14px;
+}
+
+/* Content - Services Page */
+
+.content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	border-bottom: 1px solid black;
+	margin-bottom: 5%;
+}
+
+.content section {
+	background-color: #eeeeee;
+	width: 48%;
+	padding: 3%;
+	margin-bottom: 5%;
+	border: 1px solid black;
+}
+
+.content section p {
+	line-height: 1.3;
+	margin-bottom: 5%;
+}
+
+.content section a {
+	text-decoration: none;
+	font-size: 12px;
+	color: black;
+	background-color: white;
+	padding: 6px 35px;
+	border: 1px solid black;
+	border-radius: 6px;
+}
+
+.services-info {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 10%;
+}
+
+.services-info > * {
+	width: 45%;
+	line-height: 1.3;
+}
+
+.facts p {
+	margin-bottom: 5%;
+}
+
+.facts ul {
+	list-style: square inside;
+}
+
+.facts li {
+	margin-bottom: 3%;
+}
+
+
+/* Media Queries */
+
+
+@media (max-width: 800px) {
+    .container {
+        width: 95%;
+        min-width: 0;
+    }
+    .nav-bar {
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+
+    }
+    .nav-bar nav {
+        width: 100%;
+    }
+    .cta-main {
+        width: 100%;
+    }
+    .cta-img {
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    .container {
+        width: 95%;
+        min-width: 0;
+    }
+    .nav-bar nav {
+        flex-direction: column;
+        justify-content: space-around;
+        height: 300px;
+        border-top: 2px solid #999999;
+    }
+    .nav-bar nav li {
+        width: 100%;
+        text-align: center;
+        padding-top: 0;
+        padding-bottom: 4%;
+        border-bottom: 2px solid #999999;
+    }
+    .logo-div {
+        width: 50%;
+        margin: 3% 0;
+    }
+    .cta-main h1 {
+        font-size: 17vw;
+    }
+    .info-top, .info-bottom {
+        flex-wrap: wrap;
+        margin-bottom: 0;
+    }
+    .info-top section, .info-bottom section {
+        width: 100%;
+        margin-bottom: 8%;
+    }
+}
 
